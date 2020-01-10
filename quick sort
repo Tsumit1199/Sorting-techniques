@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<conio.h>
 void quicksort(int[ ],int,int);
-void main( )
+int main( )
 {
 int low, high, pivot, t, n, i, j, a[10];
-clrscr( );
+
 printf("\nHow many elements you want to sort ? ");
 scanf("%d",&n);
 printf("\Enter elements for an array:");
@@ -12,10 +13,11 @@ for(i=0; i<n; i++)
 low=0;
 high=n-1;
 quicksort(a,low,high);
-printf("\After Sorting the elements are:");
+printf("\nAfter Sorting the elements are:");
 for(i=0;i<n;i++)
  printf("%d ",a[i]);
-getch( );
+getch();
+return 0;
 }
 void quicksort(int a[ ],int low,int high)
 {
@@ -36,6 +38,7 @@ void quicksort(int a[ ],int low,int high)
  t=a[i];
  a[i]=a[j];
  a[j]=t;
+
  }
  else
  break;
@@ -46,3 +49,4 @@ void quicksort(int a[ ],int low,int high)
  quicksort(a,j+1,high);
 }
 }
+
