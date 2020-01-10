@@ -7,7 +7,7 @@ int low, high, pivot, t, n, i, j, a[10];
 
 printf("\nHow many elements you want to sort ? ");
 scanf("%d",&n);
-printf("\Enter elements for an array:");
+printf("\n Enter elements for an array:");
 for(i=0; i<n; i++)
  scanf("%d",&a[i]);
 low=0;
