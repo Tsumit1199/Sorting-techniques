@@ -5,7 +5,7 @@ int main()
 int i,j,t,n,min,a[10];
 printf("\n How many elements you want to sort? ");
 scanf("%d",&n);
-printf("\Enter elements for an array:");
+printf("\n Enter elements for an array:");
 for(i=0;i<n;i++)
 scanf("%d",&a[i]);
 for(i=0;i<n;i++)
